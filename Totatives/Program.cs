@@ -6,9 +6,13 @@ namespace Totatives
     {
         static void Main(string[] args)
         {
-            for (int n = 1; n <= 10; n++)
+            Console.WriteLine("Enter a number: ");
+            int x = int.Parse(Console.ReadLine());
+
+            for (int n = 1; n <= x; n++)
             
-            Console.WriteLine("phi(" + n + ") = " + Phi(n));
+            Console.WriteLine("Phi(" + n + ") = " + Phi(n));
+            
             Console.ReadLine();
         }
 
@@ -25,6 +29,7 @@ namespace Totatives
             for (int i = 2; i < n; i++)
                 if (GetGCD(i, n) == 1)
                     result++;
+            
             return result;
         }
         
