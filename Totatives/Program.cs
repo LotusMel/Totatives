@@ -8,10 +8,10 @@ namespace Totatives
         {
             Console.WriteLine("Enter a number: ");
             int x = int.Parse(Console.ReadLine());
-
+            
             for (int n = 1; n <= x; n++)
             
-            Console.WriteLine("Phi(" + n + ") = " + Phi(n));
+            Console.WriteLine("Phi(" + n + ") is: " + Phi(n));
             
             Console.ReadLine();
         }
