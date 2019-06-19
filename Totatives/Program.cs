@@ -4,6 +4,7 @@ namespace Totatives
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             for (int n = 1; n <= 10; n++)
